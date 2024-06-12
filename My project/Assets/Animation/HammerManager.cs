@@ -2,47 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HammerManager : StateMachineBehaviour
+public class HammerManager : MonoBehaviour
 {
-    // OnStateEnter is called before OnStateEnter is called on any state inside this state machine
-    //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    public GameObject hammerObject;
 
-    // OnStateUpdate is called before OnStateUpdate is called on any state inside this state machine
-    //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    Animator animator;
 
-    // OnStateExit is called before OnStateExit is called on any state inside this state machine
-    //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    // Start is called before the first frame update
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
-    // OnStateMove is called before OnStateMove is called on any state inside this state machine
-    //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    // Update is called once per frame
+    void Update()
+    {
+        var mousePosition = Input.mousePosition;
+        mousePosition.z = 10;
+        Debug.Log(mousePosition);
+        var pos = Camera.main.ScreenToWorldPoint(mousePosition);
+        Debug.Log(pos);
+        hammerObject.transform.position = pos;
 
-    // OnStateIK is called before OnStateIK is called on any state inside this state machine
-    //override public void OnStateIK(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+        if (Input.GetMouseButtonDown(0))
+        {
+            animator.SetTrigger("Move0");
+        }
 
-    // OnStateMachineEnter is called when entering a state machine via its Entry Node
-    //override public void OnStateMachineEnter(Animator animator, int stateMachinePathHash)
-    //{
-    //    
-    //}
+    }
 
-    // OnStateMachineExit is called when exiting a state machine via its Exit Node
-    //override public void OnStateMachineExit(Animator animator, int stateMachinePathHash)
-    //{
-    //    
-    //}
 }
