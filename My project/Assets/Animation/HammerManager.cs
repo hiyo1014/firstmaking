@@ -17,11 +17,13 @@ public class HammerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var mousePosition = Input.mousePosition;
+        Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = 10;
-        Debug.Log(mousePosition);
-        var pos = Camera.main.ScreenToWorldPoint(mousePosition);
-        Debug.Log(pos);
+        Vector3 pos = Camera.main.ScreenToWorldPoint(mousePosition);
+        pos.x *= (float)36.28;
+        pos.y *= (float)36.28;
+        pos.x += (float)242;
+        pos.y += (float)181.4;
         hammerObject.transform.position = pos;
 
         if (Input.GetMouseButtonDown(0))
