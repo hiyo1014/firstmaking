@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public Text LeftTimeText;
+    public TextMashProUGUI LeftTimeText;
     float LeftTime = 30;
     void Update()
         {
