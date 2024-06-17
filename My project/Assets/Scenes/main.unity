@@ -3124,7 +3124,9 @@ GameObject:
   - component: {fileID: 1722163861}
   - component: {fileID: 1722163860}
   - component: {fileID: 1722163859}
+  - component: {fileID: 1722163864}
   - component: {fileID: 1722163862}
+  - component: {fileID: 1722163863}
   m_Layer: 5
   m_Name: mogura
   m_TagString: Untagged
@@ -3223,6 +3225,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pikopikoSE: {fileID: 8300000, guid: 37d9073cd77fb4a649867831f240f5f0, type: 3}
+--- !u!70 &1722163863
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722163857}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 5.2588687, y: -5.634528}
+  m_Size: {x: 39.565853, y: 49.83227}
+  m_Direction: 0
+--- !u!114 &1722163864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722163857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f513273e7a9e83440960642a28746ab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moguraPrefab: {fileID: 0}
 --- !u!1 &1777827649
 GameObject:
   m_ObjectHideFlags: 0
