@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
 
     public void OnRetryButton()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("main");
         //SaveScore(score);
         InitScore();
     }

@@ -15,7 +15,7 @@ public class TitleManager : MonoBehaviour
 
     public void OnStartButton()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("main");
     }
     // Update is called once per frame
     void Update()
