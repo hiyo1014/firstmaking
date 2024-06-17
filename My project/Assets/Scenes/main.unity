@@ -2947,6 +2947,7 @@ GameObject:
   - component: {fileID: 1722163861}
   - component: {fileID: 1722163860}
   - component: {fileID: 1722163859}
+  - component: {fileID: 1722163862}
   m_Layer: 5
   m_Name: mogura
   m_TagString: Untagged
@@ -3032,6 +3033,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722163857}
   m_CullTransparentMesh: 1
+--- !u!114 &1722163862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722163857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff2e7564b1685c478a08c4ad17d5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pikopikoSE: {fileID: 0}
 --- !u!1 &1777827649
 GameObject:
   m_ObjectHideFlags: 0
