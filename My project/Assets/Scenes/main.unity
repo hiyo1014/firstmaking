@@ -3045,7 +3045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff2e7564b1685c478a08c4ad17d5909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pikopikoSE: {fileID: 0}
+  pikopikoSE: {fileID: 8300000, guid: 37d9073cd77fb4a649867831f240f5f0, type: 3}
 --- !u!1 &1777827649
 GameObject:
   m_ObjectHideFlags: 0
@@ -3410,6 +3410,7 @@ GameObject:
   - component: {fileID: 1990068524}
   - component: {fileID: 1990068523}
   - component: {fileID: 1990068522}
+  - component: {fileID: 1990068525}
   m_Layer: 5
   m_Name: mogura
   m_TagString: Untagged
@@ -3495,6 +3496,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990068520}
   m_CullTransparentMesh: 1
+--- !u!114 &1990068525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990068520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff2e7564b1685c478a08c4ad17d5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pikopikoSE: {fileID: 8300000, guid: 37d9073cd77fb4a649867831f240f5f0, type: 3}
 --- !u!1 &1997339868
 GameObject:
   m_ObjectHideFlags: 0
