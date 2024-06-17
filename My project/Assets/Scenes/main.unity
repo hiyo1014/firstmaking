@@ -210,7 +210,6 @@ GameObject:
   - component: {fileID: 134777646}
   - component: {fileID: 134777645}
   - component: {fileID: 134777644}
-  - component: {fileID: 134777647}
   m_Layer: 5
   m_Name: mogura
   m_TagString: Untagged
@@ -296,19 +295,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134777642}
   m_CullTransparentMesh: 1
---- !u!114 &134777647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134777642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff2e7564b1685c478a08c4ad17d5909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pikopikoSE: {fileID: 8300000, guid: 37d9073cd77fb4a649867831f240f5f0, type: 3}
 --- !u!1 &147699629
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +597,6 @@ GameObject:
   - component: {fileID: 389309896}
   - component: {fileID: 389309895}
   - component: {fileID: 389309894}
-  - component: {fileID: 389309897}
   m_Layer: 5
   m_Name: mogura
   m_TagString: Untagged
@@ -697,19 +682,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389309892}
   m_CullTransparentMesh: 1
---- !u!114 &389309897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 389309892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff2e7564b1685c478a08c4ad17d5909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pikopikoSE: {fileID: 8300000, guid: 37d9073cd77fb4a649867831f240f5f0, type: 3}
 --- !u!1 &428365830
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,7 +769,6 @@ GameObject:
   - component: {fileID: 456433193}
   - component: {fileID: 456433192}
   - component: {fileID: 456433191}
-  - component: {fileID: 456433194}
   m_Layer: 5
   m_Name: mogura
   m_TagString: Untagged
@@ -883,19 +854,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456433189}
   m_CullTransparentMesh: 1
---- !u!114 &456433194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456433189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff2e7564b1685c478a08c4ad17d5909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pikopikoSE: {fileID: 8300000, guid: 37d9073cd77fb4a649867831f240f5f0, type: 3}
 --- !u!1 &458400963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,7 +1163,6 @@ GameObject:
   - component: {fileID: 676965023}
   - component: {fileID: 676965022}
   - component: {fileID: 676965021}
-  - component: {fileID: 676965024}
   m_Layer: 5
   m_Name: mogura
   m_TagString: Untagged
@@ -1291,19 +1248,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676965019}
   m_CullTransparentMesh: 1
---- !u!114 &676965024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676965019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff2e7564b1685c478a08c4ad17d5909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pikopikoSE: {fileID: 8300000, guid: 37d9073cd77fb4a649867831f240f5f0, type: 3}
 --- !u!1 &684819942
 GameObject:
   m_ObjectHideFlags: 0
@@ -3115,6 +3059,8 @@ GameObject:
   - component: {fileID: 1777827652}
   - component: {fileID: 1777827651}
   - component: {fileID: 1777827654}
+  - component: {fileID: 1777827656}
+  - component: {fileID: 1777827655}
   m_Layer: 5
   m_Name: Hammer
   m_TagString: Untagged
@@ -3213,7 +3159,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hammerObject: {fileID: 1777827649}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1884098494}
+--- !u!50 &1777827655
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777827649}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &1777827656
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777827649}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.21512794, y: 0.3226967}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 73.71442, y: 75.6506}
+  m_EdgeRadius: 0
 --- !u!1 &1844189582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3372,7 +3390,7 @@ MonoBehaviour:
   moguraGenerator6: {fileID: 0}
   resultPanal: {fileID: 0}
   LeftTimeText: {fileID: 747591774}
-  ScoreText: {fileID: 0}
+  ScoreText: {fileID: 504079740}
   finalText: {fileID: 0}
 --- !u!4 &1884098495
 Transform:
