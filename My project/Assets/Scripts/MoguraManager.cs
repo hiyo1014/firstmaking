@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class MoguraManager : MonoBehaviour
 {
-    //ƒ‚ƒOƒ‰‚ÌƒRƒ‰ƒCƒ_[‚ğéŒ¾ “–‚½‚è”»’è‚Ég‚¤
+//ãƒ¢ã‚°ãƒ©ã®ã‚³ãƒ©ã‚¤ãƒ€ãƒ¼ã‚’å®£è¨€ å½“ãŸã‚Šåˆ¤å®šã«ä½¿ã†
     Collider2D moguraCollider;
-    //ƒAƒjƒ[ƒ^[‚ğéŒ¾ ƒAƒjƒ[ƒVƒ‡ƒ“ŠÖŒW‚ÌŠÖ”Às‚Ég‚¤
+//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚¿ãƒ¼ã‚’å®£è¨€ ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³é–¢ä¿‚ã®é–¢æ•°å®Ÿè¡Œã«ä½¿ã†
     Animator animator;
-    //ƒI[ƒfƒBƒIƒ\[ƒX‚ğéŒ¾
+//ã‚ªãƒ¼ãƒ‡ã‚£ã‚ªã‚½ãƒ¼ã‚¹ã‚’å®£è¨€
     AudioSource audioSource;
     public AudioClip pikopikoSE;
 
@@ -24,32 +24,32 @@ public class MoguraManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position -= new Vector3(0, 0.1f, 0);
+        transform.position -= new Vector3(0,0.1f,0);
     }
-    //ƒAƒjƒ[ƒVƒ‡ƒ“ƒCƒxƒ“ƒg‚Åg—piè‡‡D‚Å‰ğàj
+//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚¤ãƒ™ãƒ³ãƒˆã§ä½¿ç”¨ï¼ˆæ‰‹é †â‘¤ã§è§£èª¬ï¼‰
     public void HideColliderMogura()
     {
         moguraCollider.enabled = false;
-        Debug.Log("ƒ‚ƒOƒ‰ƒRƒ‰ƒCƒ_[‚ªÁ‚¦‚½");
+        Debug.Log("ãƒ¢ã‚°ãƒ©ã‚³ãƒ©ã‚¤ãƒ€ãƒ¼ãŒæ¶ˆãˆãŸ");
     }
-    //ƒAƒjƒ[ƒVƒ‡ƒ“ƒCƒxƒ“ƒg‚Åg—piè‡‡D‚Å‰ğàj
+//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚¤ãƒ™ãƒ³ãƒˆã§ä½¿ç”¨ï¼ˆæ‰‹é †â‘¤ã§è§£èª¬ï¼‰
     public void ShowColliderMogura()
     {
         moguraCollider.enabled = true;
-        Debug.Log("ƒ‚ƒOƒ‰ƒRƒ‰ƒCƒ_[‚ª‚Â‚¢‚½");
+        Debug.Log("ãƒ¢ã‚°ãƒ©ã‚³ãƒ©ã‚¤ãƒ€ãƒ¼ãŒã¤ã„ãŸ");
     }
 
-    //
+//
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Ÿ‚â‚é‚±‚ÆAUŒ‚‚ğó‚¯‚½‚çA“¾“_‚ª’Ç‰Á‚³‚ê‚é
-        //Hurt‚Æ–¼•t‚¯‚½ƒpƒ‰ƒ[ƒ^‚ª‚±‚±‚ÅŠˆ‚«‚é
+        //æ¬¡ã‚„ã‚‹ã“ã¨ã€æ”»æ’ƒã‚’å—ã‘ãŸã‚‰ã€å¾—ç‚¹ãŒè¿½åŠ ã•ã‚Œã‚‹
+        //Hurtã¨åä»˜ã‘ãŸãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãŒã“ã“ã§æ´»ãã‚‹
         animator.SetTrigger("Hurt");
         audioSource.PlayOneShot(pikopikoSE);
         HideColliderMogura();
         StartCoroutine(Damage());
     }
-    //ƒ_ƒ[ƒW‚ğó‚¯‚é‚ÌŠÖ”
+//ãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’å—ã‘ã‚‹æ™‚ã®é–¢æ•°
     IEnumerator Damage()
     {
         yield return new WaitForSeconds(0.5f);
