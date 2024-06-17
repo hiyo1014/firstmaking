@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     float LeftTime = 30;
     void Update()
         {
-      
+            
             //1秒に1秒ずつ減らしていく
             LeftTime -= Time.deltaTime;
             //マイナスは表示しない
