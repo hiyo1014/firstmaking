@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 134777646}
   - component: {fileID: 134777645}
   - component: {fileID: 134777644}
+  - component: {fileID: 134777647}
   m_Layer: 5
   m_Name: mogura
   m_TagString: Untagged
@@ -295,6 +296,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134777642}
   m_CullTransparentMesh: 1
+--- !u!114 &134777647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134777642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff2e7564b1685c478a08c4ad17d5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pikopikoSE: {fileID: 8300000, guid: 37d9073cd77fb4a649867831f240f5f0, type: 3}
 --- !u!1 &147699629
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +611,7 @@ GameObject:
   - component: {fileID: 389309896}
   - component: {fileID: 389309895}
   - component: {fileID: 389309894}
+  - component: {fileID: 389309897}
   m_Layer: 5
   m_Name: mogura
   m_TagString: Untagged
@@ -682,6 +697,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389309892}
   m_CullTransparentMesh: 1
+--- !u!114 &389309897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389309892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff2e7564b1685c478a08c4ad17d5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pikopikoSE: {fileID: 8300000, guid: 37d9073cd77fb4a649867831f240f5f0, type: 3}
 --- !u!1 &428365830
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,6 +797,7 @@ GameObject:
   - component: {fileID: 456433193}
   - component: {fileID: 456433192}
   - component: {fileID: 456433191}
+  - component: {fileID: 456433194}
   m_Layer: 5
   m_Name: mogura
   m_TagString: Untagged
@@ -854,6 +883,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456433189}
   m_CullTransparentMesh: 1
+--- !u!114 &456433194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456433189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff2e7564b1685c478a08c4ad17d5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pikopikoSE: {fileID: 8300000, guid: 37d9073cd77fb4a649867831f240f5f0, type: 3}
 --- !u!1 &458400963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,6 +1205,7 @@ GameObject:
   - component: {fileID: 676965023}
   - component: {fileID: 676965022}
   - component: {fileID: 676965021}
+  - component: {fileID: 676965024}
   m_Layer: 5
   m_Name: mogura
   m_TagString: Untagged
@@ -1248,6 +1291,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676965019}
   m_CullTransparentMesh: 1
+--- !u!114 &676965024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676965019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff2e7564b1685c478a08c4ad17d5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pikopikoSE: {fileID: 8300000, guid: 37d9073cd77fb4a649867831f240f5f0, type: 3}
 --- !u!1 &684819942
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,6 +3213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hammerObject: {fileID: 1777827649}
+  gameManager: {fileID: 0}
 --- !u!1 &1844189582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,7 +3364,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: becd684a85988469493ee3035bc203da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moguraGenerator1: {fileID: 0}
+  moguraGenerator2: {fileID: 0}
+  moguraGenerator3: {fileID: 0}
+  moguraGenerator4: {fileID: 0}
+  moguraGenerator5: {fileID: 0}
+  moguraGenerator6: {fileID: 0}
+  resultPanal: {fileID: 0}
   LeftTimeText: {fileID: 747591774}
+  ScoreText: {fileID: 0}
+  finalText: {fileID: 0}
 --- !u!4 &1884098495
 Transform:
   m_ObjectHideFlags: 0
