@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI finalText;
     float LeftTime = 30;
-    int score;
+    int score = 0;
     string playTime;
 
     void Start()
