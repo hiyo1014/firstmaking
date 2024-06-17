@@ -71,14 +71,14 @@ public class GameManager : MonoBehaviour
     public void OnTitleButton()
     {
         SceneManager.LoadScene("Title");
-        SaveScore(score);
+        //SaveScore(score);
         InitScore();
     }
 
     public void OnRetryButton()
     {
         SceneManager.LoadScene("Main");
-        SaveScore(score);
+        //SaveScore(score);
         InitScore();
     }
 
