@@ -1517,7 +1517,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u6B8B\u308A\u6642\u959320\u79D2"
+  m_text: "\u6B8B\u308A\u6642\u9593:30"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 764fea35b790c0d4e94a8108aa04f8f4, type: 2}
   m_sharedMaterial: {fileID: -7908081992194533878, guid: 764fea35b790c0d4e94a8108aa04f8f4, type: 2}
@@ -3309,6 +3309,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844189582}
   m_CullTransparentMesh: 1
+--- !u!1 &1884098490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1884098495}
+  - component: {fileID: 1884098494}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1884098494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884098490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: becd684a85988469493ee3035bc203da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftTimeText: {fileID: 747591774}
+--- !u!4 &1884098495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884098490}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 421.68326, y: 218.08669, z: 0.43733022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1918637158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3558,3 +3603,4 @@ SceneRoots:
   - {fileID: 210712854}
   - {fileID: 222633797}
   - {fileID: 1997339871}
+  - {fileID: 1884098495}

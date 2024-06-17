@@ -6,7 +6,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public TextMashProUGUI LeftTimeText;
+    public TextMeshProUGUI LeftTimeText;
     float LeftTime = 30;
     void Update()
         {
