@@ -20,14 +20,14 @@ public class HammerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (gameManager.resultPanal.activeSelf == false)
-        //{
+        if (gameManager.resultPanal.activeSelf == false)
+        {
             ShowHammer();
             if (Input.GetMouseButtonDown(0))
             {
                 animator.SetTrigger("Move0");
             }
-        //}
+        }
     }
 
     void ShowHammer()
@@ -46,14 +46,14 @@ public class HammerManager : MonoBehaviour
     public void HideColliderHammer()
     {
         hammerCollider.enabled = false;
-        Debug.Log("ハンマーコライダーが消えた");
+        //Debug.Log("ハンマーコライダーが消えた");
     }
 
     //アニメーションイベントで使用（手順⑤で解説）
     public void ShowColliderHammer()
     {
         hammerCollider.enabled = true;
-        Debug.Log("ハンマーコライダーがついた");
+        //Debug.Log("ハンマーコライダーがついた");
     }
 
 }

@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        InitScore();
         StartCoroutine("CreateMogura1");
         StartCoroutine("CreateMogura2");
         StartCoroutine("CreateMogura3");

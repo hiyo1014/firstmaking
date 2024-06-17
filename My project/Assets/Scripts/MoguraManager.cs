@@ -6,7 +6,7 @@ public class MoguraManager : MonoBehaviour
 {
     Collider2D moguraCollider;
     Animator animator;
-    GameManager gameManager; //追記
+    GameManager GameManager; //追記
     AudioSource audioSource;
     public AudioClip pikopikoSE;
 
@@ -14,7 +14,7 @@ public class MoguraManager : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); //追記
+        GameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); //追記
         animator = GetComponent<Animator>();
         moguraCollider = GetComponent<Collider2D>();
         HideColliderMogura();
@@ -28,20 +28,21 @@ public class MoguraManager : MonoBehaviour
     public void HideColliderMogura()
     {
         moguraCollider.enabled = false;
-        Debug.Log("モグラコライダーが消えた");
+        //Debug.Log("モグラコライダーが消えた");
     }
     public void ShowColliderMogura()
     {
         moguraCollider.enabled = true;
-        Debug.Log("モグラコライダーがついた");
+        //Debug.Log("モグラコライダーがついた");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //次やること、攻撃を受けたら、得点が追加される
+        Debug.Log("Hurt");
         animator.SetTrigger("Hurt");
         audioSource.PlayOneShot(pikopikoSE);
-        gameManager.AddScore(); //追記
+        GameManager.AddScore(); //追記
         HideColliderMogura();
         StartCoroutine(Damage());
     }
