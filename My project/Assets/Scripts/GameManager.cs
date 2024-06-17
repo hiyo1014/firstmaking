@@ -100,16 +100,16 @@ public class GameManager : MonoBehaviour
     IEnumerator CreateMogura4()
     {
         yield return new WaitForSeconds(2.0f); //0.5秒遅らせる
-        moguraGenerator1.SpawnMogura();
+        moguraGenerator4.SpawnMogura();
     }
     IEnumerator CreateMogura5()
     {
         yield return new WaitForSeconds(2.5f); //1秒遅らせる
-        moguraGenerator2.SpawnMogura();
+        moguraGenerator5.SpawnMogura();
     }
     IEnumerator CreateMogura6()
     {
         yield return new WaitForSeconds(3.0f); //1.5秒遅らせる
-        moguraGenerator3.SpawnMogura();
+        moguraGenerator6.SpawnMogura();
     }
 }
