@@ -20,14 +20,14 @@ public class HammerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameManager.resultPanal.activeSelf == false)
-        {
+        //if (gameManager.resultPanal.activeSelf == false)
+        //{
             ShowHammer();
             if (Input.GetMouseButtonDown(0))
             {
                 animator.SetTrigger("Move0");
             }
-        }
+        //}
     }
 
     void ShowHammer()
