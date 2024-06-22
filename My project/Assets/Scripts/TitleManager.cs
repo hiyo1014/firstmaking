@@ -2,13 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class TitleManager : MonoBehaviour
 {
+    public GameManager gameManager;
+    public TextMeshProUGUI BestScore;
+    public int bestScoreval = 0;
     AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
+        if(bestScoreval < gameManager.score){
+            bestScoreval = gameManager.score ;
+        }
+        BestScore.text = "BestScore" + ((int)bestScoreval).ToString();
         //audioSource = GetComponent<AudioSource>();
         //audioSource.Play();
     }
