@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI LeftTimeText;
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI finalText;
+    public TextMeshProUGUI BestScoreText;
     float LeftTime = 30;
     string playTime;
     public int score = 0;
@@ -33,6 +34,8 @@ public class GameManager : MonoBehaviour
         StartCoroutine("CreateMogura5");
         StartCoroutine("CreateMogura6");
         ScoreText.text = "得点：" + score;
+        int beScore = PlayerPrefs.GetInt("BESTSCORE");
+        BestScoreText.text = "BestScore:" + beScore;
         resultPanal.SetActive(false);
     }
 
