@@ -53,7 +53,8 @@ public class MoguraManager : MonoBehaviour
         animator.enabled = false;
         yield return new WaitForSeconds(1.0f);
         animator.enabled = true;
-        animator.Play("float@mogura");
+        //animator.Play("float@mogura");
+        Destroy(gameObject);
     }
 
 }
