@@ -3263,10 +3263,12 @@ MonoBehaviour:
   moguraGenerator4: {fileID: 1018108750}
   moguraGenerator5: {fileID: 1497476928}
   moguraGenerator6: {fileID: 514254443}
+  title: {fileID: 0}
   resultPanal: {fileID: 1823593224}
   LeftTimeText: {fileID: 747591774}
   ScoreText: {fileID: 504079740}
   finalText: {fileID: 1622010853}
+  score: 0
 --- !u!4 &1884098495
 Transform:
   m_ObjectHideFlags: 0

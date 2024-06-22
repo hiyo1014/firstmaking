@@ -13,14 +13,15 @@ public class GameManager : MonoBehaviour
     public MoguraGenerator moguraGenerator4;
     public MoguraGenerator moguraGenerator5;
     public MoguraGenerator moguraGenerator6;
+    public TitleManager title;
 
     public GameObject resultPanal;
     public TextMeshProUGUI LeftTimeText;
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI finalText;
     float LeftTime = 30;
-    public int score = 0;
     string playTime;
+    public int score = 0;
 
     void Start()
     {
@@ -56,6 +57,16 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void SaveScore()
+    {
+       int resultScore = PlayerPrefs.GetInt("BESTSCORE");
+       if (score > resultScore){
+            PlayerPrefs.SetInt("BESTSCORE", score);
+            PlayerPrefs.Save();
+       }
+    }
+     
+
     public void AddScore()
     {
         score += 10;
@@ -72,14 +83,14 @@ public class GameManager : MonoBehaviour
     public void OnTitleButton()
     {
         SceneManager.LoadScene("Title");
-        //SaveScore(score);
+        SaveScore();
         InitScore();
     }
 
     public void OnRetryButton()
     {
         SceneManager.LoadScene("main");
-        //SaveScore(score);
+        SaveScore();
         InitScore();
     }
 
