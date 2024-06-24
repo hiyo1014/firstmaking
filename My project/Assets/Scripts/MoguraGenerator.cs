@@ -26,12 +26,12 @@ public class MoguraGenerator : MonoBehaviour
     //���O���𐶐�����֐�
     public void SpawnMogura()
     {
-        int moguranum = UnityEngine.Random.Range(1, 11);
-        if(5 > moguranum){
+        int moguranum = UnityEngine.Random.Range(1, 101);
+        if(60 > moguranum){
             monster = Instantiate(moguraPrefab);
-        }else if(8 > moguranum && moguranum > 4){
+        }else if(80 > moguranum && moguranum > 59){
             monster = Instantiate(moguraPrefablv2);
-        }else if(9 > moguranum && moguranum > 7){
+        }else if(95 > moguranum && moguranum > 79){
             monster = Instantiate(rabitPrefab);
         }else{
             monster = Instantiate(moguraPrefablv3);

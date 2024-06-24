@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
 
     public void AddScore(int point)
     {
-        score += 10;
+        score += point;
         ScoreText.text = "得点:" + score;
     }
 
