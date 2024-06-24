@@ -39,10 +39,9 @@ public class MoguraManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //次やること、攻撃を受けたら、得点が追加される
-        Debug.Log("Hurt");
+        //Debug.Log("Hurt");
         animator.SetTrigger("Hurt");
         audioSource.PlayOneShot(pikopikoSE);
-        GameManager.AddScore(); //追記
         HideColliderMogura();
         StartCoroutine(Damage());
     }
@@ -51,6 +50,23 @@ public class MoguraManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         animator.enabled = false;
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        if (stateInfo.IsName("Damage@Mogure"))
+        {
+            GameManager.AddScore(10);
+        }
+        else if (stateInfo.IsName("Damage@MogureLv2"))
+        {
+            GameManager.AddScore(20);
+        }
+        else if (stateInfo.IsName("Damage@MogureLv3"))
+        {
+            GameManager.AddScore(30);
+        }
+        else if (stateInfo.IsName("Damage@Rabbit"))
+        {
+            GameManager.AddScore(40);
+        }
         yield return new WaitForSeconds(1.0f);
         animator.enabled = true;
         //animator.Play("float@mogura");

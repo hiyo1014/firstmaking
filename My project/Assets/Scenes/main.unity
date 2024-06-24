@@ -1388,6 +1388,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moguraPrefab: {fileID: 4976587898808911233, guid: 93662dd9425d301408b8c6074d2d9eeb, type: 3}
+  moguraPrefablv2: {fileID: 4976587898808911233, guid: 0e4d5ed4887374e4cad0b5dca063d91f, type: 3}
+  moguraPrefablv3: {fileID: 4976587898808911233, guid: f3b03b22ed2bda148b1e4972c2d2cffb, type: 3}
+  rabitPrefab: {fileID: 4976587898808911233, guid: 2661efd8dbb9ab34495e24ba73dd9a8e, type: 3}
 --- !u!1 &613587867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,6 +1436,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moguraPrefab: {fileID: 4976587898808911233, guid: 93662dd9425d301408b8c6074d2d9eeb, type: 3}
+  moguraPrefablv2: {fileID: 4976587898808911233, guid: 0e4d5ed4887374e4cad0b5dca063d91f, type: 3}
+  moguraPrefablv3: {fileID: 4976587898808911233, guid: f3b03b22ed2bda148b1e4972c2d2cffb, type: 3}
+  rabitPrefab: {fileID: 4976587898808911233, guid: 2661efd8dbb9ab34495e24ba73dd9a8e, type: 3}
 --- !u!1 &669590344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,6 +2259,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moguraPrefab: {fileID: 4976587898808911233, guid: 93662dd9425d301408b8c6074d2d9eeb, type: 3}
+  moguraPrefablv2: {fileID: 4976587898808911233, guid: 0e4d5ed4887374e4cad0b5dca063d91f, type: 3}
+  moguraPrefablv3: {fileID: 4976587898808911233, guid: f3b03b22ed2bda148b1e4972c2d2cffb, type: 3}
+  rabitPrefab: {fileID: 4976587898808911233, guid: 2661efd8dbb9ab34495e24ba73dd9a8e, type: 3}
 --- !u!1 &1110466287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,6 +2713,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moguraPrefab: {fileID: 4976587898808911233, guid: 93662dd9425d301408b8c6074d2d9eeb, type: 3}
+  moguraPrefablv2: {fileID: 4976587898808911233, guid: 0e4d5ed4887374e4cad0b5dca063d91f, type: 3}
+  moguraPrefablv3: {fileID: 4976587898808911233, guid: f3b03b22ed2bda148b1e4972c2d2cffb, type: 3}
+  rabitPrefab: {fileID: 4976587898808911233, guid: 2661efd8dbb9ab34495e24ba73dd9a8e, type: 3}
 --- !u!1 &1532893754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2824,6 +2836,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moguraPrefab: {fileID: 4976587898808911233, guid: 93662dd9425d301408b8c6074d2d9eeb, type: 3}
+  moguraPrefablv2: {fileID: 4976587898808911233, guid: 0e4d5ed4887374e4cad0b5dca063d91f, type: 3}
+  moguraPrefablv3: {fileID: 4976587898808911233, guid: f3b03b22ed2bda148b1e4972c2d2cffb, type: 3}
+  rabitPrefab: {fileID: 4976587898808911233, guid: 2661efd8dbb9ab34495e24ba73dd9a8e, type: 3}
 --- !u!1 &1563460457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,51 +2914,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563460457}
   m_CullTransparentMesh: 1
---- !u!1 &1570911275
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1570911277}
-  - component: {fileID: 1570911276}
-  m_Layer: 0
-  m_Name: MoguraGenerator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1570911276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1570911275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f513273e7a9e83440960642a28746ab5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moguraPrefab: {fileID: 4976587898808911233, guid: 93662dd9425d301408b8c6074d2d9eeb, type: 3}
---- !u!4 &1570911277
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1570911275}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 203.69647, y: 178.71149, z: -0.7871319}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622010852
 GameObject:
   m_ObjectHideFlags: 0
@@ -3510,6 +3480,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moguraPrefab: {fileID: 4976587898808911233, guid: 93662dd9425d301408b8c6074d2d9eeb, type: 3}
+  moguraPrefablv2: {fileID: 4976587898808911233, guid: 0e4d5ed4887374e4cad0b5dca063d91f, type: 3}
+  moguraPrefablv3: {fileID: 4976587898808911233, guid: f3b03b22ed2bda148b1e4972c2d2cffb, type: 3}
+  rabitPrefab: {fileID: 4976587898808911233, guid: 2661efd8dbb9ab34495e24ba73dd9a8e, type: 3}
 --- !u!1 &1918637158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3662,4 +3635,3 @@ SceneRoots:
   - {fileID: 210712854}
   - {fileID: 1997339871}
   - {fileID: 1884098495}
-  - {fileID: 1570911277}
