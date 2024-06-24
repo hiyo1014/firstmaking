@@ -99,32 +99,80 @@ public class GameManager : MonoBehaviour
 
     IEnumerator CreateMogura1()
     {
-        yield return new WaitForSeconds(0.5f); //0.5秒遅らせる
-        moguraGenerator1.SpawnMogura();
+        yield return null;
+        while (true)
+        {
+            yield return null;
+            if (moguraGenerator1.IsThereMogura() == false)
+            {
+                yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
+                moguraGenerator1.SpawnMogura();
+            }
+        }
     }
     IEnumerator CreateMogura2()
     {
-        yield return new WaitForSeconds(1.0f); //1秒遅らせる
-        moguraGenerator2.SpawnMogura();
+        yield return null;
+        while (true)
+        {
+            yield return null;
+            if (moguraGenerator2.IsThereMogura() == false)
+            {
+                yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
+                moguraGenerator2.SpawnMogura();
+            }
+        }
     }
     IEnumerator CreateMogura3()
     {
-        yield return new WaitForSeconds(1.5f); //1.5秒遅らせる
-        moguraGenerator3.SpawnMogura();
+        yield return null;
+        while (true)
+        {
+            yield return null;
+            if (moguraGenerator3.IsThereMogura() == false)
+            {
+                yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
+                moguraGenerator3.SpawnMogura();
+            }
+        }
     }
     IEnumerator CreateMogura4()
     {
-        yield return new WaitForSeconds(2.0f); //0.5秒遅らせる
-        moguraGenerator4.SpawnMogura();
+        yield return null;
+        while (true)
+        {
+            yield return null;
+            if (moguraGenerator4.IsThereMogura() == false)
+            {
+                yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
+                moguraGenerator4.SpawnMogura();
+            }
+        }
     }
     IEnumerator CreateMogura5()
     {
-        yield return new WaitForSeconds(2.5f); //1秒遅らせる
-        moguraGenerator5.SpawnMogura();
+        yield return null;
+        while (true)
+        {
+            yield return null;
+            if (moguraGenerator5.IsThereMogura() == false)
+            {
+                yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
+                moguraGenerator5.SpawnMogura();
+            }
+        }
     }
     IEnumerator CreateMogura6()
     {
-        yield return new WaitForSeconds(3.0f); //1.5秒遅らせる
-        moguraGenerator6.SpawnMogura();
+        yield return null;
+        while (true)
+        {
+            yield return null;
+            if (moguraGenerator6.IsThereMogura() == false)
+            {
+                yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
+                moguraGenerator6.SpawnMogura();
+            }
+        }
     }
 }
