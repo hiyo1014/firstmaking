@@ -5,6 +5,9 @@ using UnityEngine;
 public class MoguraGenerator : MonoBehaviour
 {
     public GameObject moguraPrefab;
+    public GameObject moguraPrefablv2;
+    public GameObject moguraPrefablv3;
+    public GameObject rabitPrefab;
     bool isThereMogura;
     GameObject monster;
 
@@ -20,15 +23,25 @@ public class MoguraGenerator : MonoBehaviour
     {
         
     }
-    //ƒ‚ƒOƒ‰‚ğ¶¬‚·‚éŠÖ”
+    //ï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ğ¶ï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½
     public void SpawnMogura()
     {
-        monster = Instantiate(moguraPrefab);
+        int moguranum = UnityEngine.Random.Range(1, 11);
+        if(5 > moguranum){
+            monster = Instantiate(moguraPrefab);
+        }else if(8 > moguranum && moguranum > 4){
+            monster = Instantiate(moguraPrefablv2);
+        }else if(9 > moguranum && moguranum > 7){
+            monster = Instantiate(rabitPrefab);
+        }else{
+            monster = Instantiate(moguraPrefablv3);
+        }
+
         monster.transform.SetParent(transform, false);
         isThereMogura = true;
         if (isThereMogura == true)
         {
-            Debug.Log("¬Œ÷");
+            Debug.Log("ï¿½ï¿½ï¿½ï¿½");
         }
     }
 
