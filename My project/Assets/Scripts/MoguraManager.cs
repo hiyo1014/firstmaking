@@ -48,8 +48,7 @@ public class MoguraManager : MonoBehaviour
     IEnumerator Damage()
     {
 
-        yield return new WaitForSeconds(0.5f);
-        animator.enabled = false;
+        yield return new WaitForSeconds(0.1f);
         AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
         if (stateInfo.IsName("Damage@Mogure"))
         {
@@ -65,8 +64,10 @@ public class MoguraManager : MonoBehaviour
         }
         else if (stateInfo.IsName("Damage@Rabbit"))
         {
-            GameManager.AddScore(40);
+            GameManager.AddScore(-20);
         }
+        yield return new WaitForSeconds(0.4f);
+        animator.enabled = false;
         yield return new WaitForSeconds(1.0f);
         animator.enabled = true;
         //animator.Play("float@mogura");
