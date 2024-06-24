@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class MoguraManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class MoguraManager : MonoBehaviour
     GameManager GameManager; //追記
     AudioSource audioSource;
     public AudioClip pikopikoSE;
+    DateTime endTime, nowTime;
 
     // Start is called before the first frame update
     void Start()
@@ -18,12 +20,19 @@ public class MoguraManager : MonoBehaviour
         animator = GetComponent<Animator>();
         moguraCollider = GetComponent<Collider2D>();
         HideColliderMogura();
+        endTime = System.DateTime.Now;
+        endTime = endTime.AddSeconds(4);
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position -= new Vector3(0, 0.1f, 0);
+        nowTime = System.DateTime.Now;
+        if (nowTime >= endTime)
+        {
+            Destroy(gameObject);
+        }
     }
     public void HideColliderMogura()
     {

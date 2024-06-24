@@ -41,7 +41,7 @@ public class MoguraGenerator : MonoBehaviour
         isThereMogura = true;
         if (isThereMogura == true)
         {
-            Debug.Log("����");
+            //Debug.Log("����");
         }
     }
 
