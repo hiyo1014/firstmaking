@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
     public MoguraGenerator moguraGenerator5;
     public MoguraGenerator moguraGenerator6;
     public TitleManager title;
-    int[] numMogura = new int[6];
 
     public GameObject resultPanal;
     public TextMeshProUGUI LeftTimeText;
@@ -73,7 +72,7 @@ public class GameManager : MonoBehaviour
     }
      
 
-    public void AddScore()
+    public void AddScore(int point)
     {
         score += 10;
         ScoreText.text = "得点:" + score;
@@ -108,7 +107,7 @@ public class GameManager : MonoBehaviour
             if (moguraGenerator1.IsThereMogura() == false)
             {
                 yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
-                numMogura[0] = moguraGenerator1.SpawnMogura();
+                moguraGenerator1.SpawnMogura();
             }
         }
     }
@@ -121,7 +120,7 @@ public class GameManager : MonoBehaviour
             if (moguraGenerator2.IsThereMogura() == false)
             {
                 yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
-                numMogura[1] = moguraGenerator2.SpawnMogura();
+                moguraGenerator2.SpawnMogura();
             }
         }
     }
@@ -134,7 +133,7 @@ public class GameManager : MonoBehaviour
             if (moguraGenerator3.IsThereMogura() == false)
             {
                 yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
-                numMogura[2] = moguraGenerator3.SpawnMogura();
+                moguraGenerator3.SpawnMogura();
             }
         }
     }
@@ -147,7 +146,7 @@ public class GameManager : MonoBehaviour
             if (moguraGenerator4.IsThereMogura() == false)
             {
                 yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
-                numMogura[3] = moguraGenerator4.SpawnMogura();
+                moguraGenerator4.SpawnMogura();
             }
         }
     }
@@ -160,7 +159,7 @@ public class GameManager : MonoBehaviour
             if (moguraGenerator5.IsThereMogura() == false)
             {
                 yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
-                numMogura[4] = moguraGenerator5.SpawnMogura();
+                moguraGenerator5.SpawnMogura();
             }
         }
     }
@@ -173,7 +172,7 @@ public class GameManager : MonoBehaviour
             if (moguraGenerator6.IsThereMogura() == false)
             {
                 yield return new WaitForSeconds(Random.Range(0.5f, 5.0f)); //0.5秒遅らせる
-                numMogura[5] = moguraGenerator6.SpawnMogura();
+                moguraGenerator6.SpawnMogura();
             }
         }
     }
